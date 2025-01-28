@@ -17,10 +17,7 @@ const UserList = (props) => {
                 type="button"
                 className="bg-green-600 text-slate-50 h-9 w-24 text-lg border-none rounded"
                 onClick={() => {
-                  setShowNewForm((prev) => {
-                    console.log(prev);
-                    return !prev;
-                  });
+                  setShowNewForm((prev) => !prev);
                 }}
               >
                 Add

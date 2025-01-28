@@ -37,6 +37,7 @@ function App() {
   // Add new user
   const addNewUserData = (userDetails) => {
     setUserData((prev) => [...prev, userDetails]);
+    setUpdateId(-1);
   };
 
   // Update existing user
@@ -49,6 +50,7 @@ function App() {
         return user;
       })
     );
+    setUpdateId(-1);
   };
 
   // Delete existing user
